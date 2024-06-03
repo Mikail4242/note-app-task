@@ -34,15 +34,15 @@ TypeScript gives us more certainty over the code we write and helps reduce the n
 
 # Features
 
-1. ## Allow links to specific notes.
+1. **Allow links to specific notes.**
 
    With this feature, users can link directly to specific notes within your application. For instance, if you extract an ID from one note's link and paste it into the content of another note, you can easily create a hyperlink to the related note.
 
-2. ## Implemented pagination on notes listing.
+2. **Implemented pagination on notes listing.**
 
 By implementing pagination on the notes listing, users can navigate through large sets of notes more efficiently.
 
-3. ## Implemented favorite on notes.
+3. **Implemented favorite on notes.**
 
   With the addition of the favoriteNotes feature, users can mark certain notes as favorites for quick access. 
 
