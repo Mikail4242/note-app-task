@@ -17,7 +17,7 @@
 }
 .note-list {
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 }
@@ -26,12 +26,6 @@
 }
 
 @media (min-width: 480px) {
-	.note-list {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: row;
-	}
 	.add-note-btn,
 	.favorite-note-btn {
 		margin: 20px 60px 20px 60px;

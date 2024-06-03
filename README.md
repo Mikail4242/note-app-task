@@ -1,25 +1,50 @@
-Suggestions for Improvement
-1.Enhance Testing
+# Suggestions for Improvement
+
+1. **Use `useContext` for State Management**
+
+Leverage React's `useContext` hook for managing state across your application, providing a more efficient and centralized way to handle state compared to prop drilling.
+
+2. **Enhance Testing**
+
 Consider adding more tests and improving them by creating reusable functions and mocks.
 
-2.Enhance Code Readability
+3. **Enhance Code Readability**
+
 Utilize JSDocs to improve code readability, making functions and their parameters clearer.
 
-3.Update Dependencies
+4. **Update Dependencies**
+
 Keep packages updated to ensure security and compatibility with the latest features.
 
-4.End-to-End Testing
+5. **End-to-End Testing**
+
 Add end-to-end tests using frameworks like Playwright or Cypress to ensure full application functionality.
 
-5.Constants File
+6. **Constants File**
+
 Create a constants file to store commonly used variables, making them easily maintainable and accessible throughout the application.
 
-6.Linting and Formatting
+7. **Linting and Formatting**
+
 Set up linting and formatting tools like ESLint and Prettier to maintain a consistent code style throughout the project.
 
-7.Add TypeScript
+8. **Add TypeScript**
+
 TypeScript gives us more certainty over the code we write and helps reduce the number of bugs and issues that are created.
 
+# Features
+
+1. ## Allow links to specific notes.
+
+   With this feature, users can link directly to specific notes within your application. For instance, if you extract an ID from one note's link and paste it into the content of another note, you can easily create a hyperlink to the related note.
+
+2. ## Implemented pagination on notes listing.
+
+By implementing pagination on the notes listing, users can navigate through large sets of notes more efficiently.
+
+3. ## Implemented favorite on notes.
+
+  With the addition of the favoriteNotes feature, users can mark certain notes as favorites for quick access. 
 
 # Getting Started with Create React App
 
