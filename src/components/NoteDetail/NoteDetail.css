@@ -25,5 +25,8 @@
 	margin: 20px 40px 20px 40px;
 }
 .ant-divider-horizontal {
-    margin: 12px 0;
+	margin: 12px 0;
+}
+.btn-container {
+	display: flex;
 }

@@ -4,6 +4,7 @@ import NoteFormPage from "../pages/NoteFormPage";
 import NoteListPage from "../pages/NoteListPage";
 import NoteDetailPage from "../pages/NoteDetailPage";
 import NoteNotFoundPage from "../pages/NoteNotFoundPage";
+import FavoritePage from "../pages/FavoritePage";
 
 const AppRoutes = ({
 	notes,
@@ -13,6 +14,7 @@ const AppRoutes = ({
 	editNote,
 	deleteNote,
 	totalNotes,
+	toggleFavorite,
 }) => {
 	return (
 		<Routes>
@@ -26,12 +28,27 @@ const AppRoutes = ({
 						editNote={editNote}
 						deleteNote={deleteNote}
 						totalNotes={totalNotes}
+						toggleFavorite={toggleFavorite}
 					/>
 				}
 			/>
 			<Route
 				path="/add"
 				element={<NoteFormPage addNote={addNote} notes={notes} />}
+			/>
+
+			<Route
+				path="/favorites"
+				element={
+					<FavoritePage
+						notes={notes}
+						deleteNote={deleteNote}
+						toggleFavorite={toggleFavorite}
+						totalNotes={totalNotes}
+						currentPage={currentPage}
+						onPageChange={onPageChange}
+					/>
+				}
 			/>
 			<Route
 				path="/note/:id"

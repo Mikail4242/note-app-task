@@ -1,0 +1,23 @@
+.favorite-notes-page {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.title-favorite {
+	display: flex;
+	justify-content: center;
+}
+.btn-back {
+	display: flex;
+	justify-content: center;
+}
+
+@media (min-width: 480px) {
+	.favorite-notes-page {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row;
+	}
+}

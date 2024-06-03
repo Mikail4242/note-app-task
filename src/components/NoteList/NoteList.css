@@ -2,9 +2,9 @@
 	display: flex;
 	justify-content: center;
 }
-.add-note-btn {
-	margin-top: 20px;
-	margin-bottom: 20px;
+.add-note-btn,
+.favorite-note-btn {
+	margin: 20px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -18,8 +18,11 @@
 .note-list {
 	display: flex;
 	flex-direction: column;
-	justify-content: center; 
-	align-items: center; 
+	justify-content: center;
+	align-items: center;
+}
+.link-no-underline {
+	text-decoration: none; /* Remove the underline */
 }
 
 @media (min-width: 480px) {
@@ -28,5 +31,14 @@
 		justify-content: center;
 		align-items: center;
 		flex-direction: row;
+	}
+	.add-note-btn,
+	.favorite-note-btn {
+		margin: 20px 60px 20px 60px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #8a00c2;
+		color: #ffd700;
 	}
 }

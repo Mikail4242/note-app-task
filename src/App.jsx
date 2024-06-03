@@ -6,6 +6,7 @@ import {
 	deleteNotes,
 	editNotes,
 	addNotes,
+	toggleFavorites
 } from "./components/utils/utils";
 import AppRoutes from "./routes/Routes";
 import { v4 as uuidv4 } from "uuid";
@@ -43,6 +44,12 @@ const App = () => {
 		);
 	};
 
+	const toggleFavorite = (id) => {
+		toggleFavorites(
+			setNotes, id, notes
+		);
+	};
+
 	const notesPerPage = 2;
 	const currentNotes = notes.slice(
 		(currentPage - 1) * notesPerPage,
@@ -61,6 +68,7 @@ const App = () => {
 					editNote={editNote}
 					deleteNote={deleteNote}
 					totalNotes={notes.length}
+					toggleFavorite={toggleFavorite}
 				/>
 			</Router>
 		</div>

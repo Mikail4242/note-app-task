@@ -1,12 +1,17 @@
 import React from "react";
 import { Card, Button } from "antd";
 import { Link } from "react-router-dom";
+import { StarOutlined, StarFilled } from "@ant-design/icons";
 import { parseContent } from "../utils/utils";
 import "../NoteCard/NoteCard.css";
 
-const Note = ({ note, deleteNote }) => {
+const Note = ({ note, deleteNote, toggleFavorite }) => {
 	const handleDeleteClick = () => {
 		deleteNote(note.id);
+	};
+
+	const handleToggleFavorite = () => {
+		toggleFavorite(note.id);
 	};
 
 	return (
@@ -14,12 +19,25 @@ const Note = ({ note, deleteNote }) => {
 			<Card
 				className="card-container"
 				title={
-					<Link
-						className="card-title"
-						to={`/note/${note.id}`}
-						state={{ note: note }}>
-						{note.title}
-					</Link>
+					<div className="card-title-wrapper">
+						<Link
+							className="card-title"
+							to={`/note/${note.id}`}
+							state={{ note: note }}>
+							{note.title}
+						</Link>
+						{note.isFavorite ? (
+							<StarFilled
+								className="favorite-icon"
+								onClick={handleToggleFavorite}
+							/>
+						) : (
+							<StarOutlined
+								className="favorite-icon"
+								onClick={handleToggleFavorite}
+							/>
+						)}
+					</div>
 				}>
 				<p
 					className="note-text"

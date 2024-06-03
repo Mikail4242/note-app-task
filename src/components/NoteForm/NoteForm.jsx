@@ -5,7 +5,11 @@ import "../NoteForm/NoteForm.css";
 
 const NoteForm = ({ addNote }) => {
 	const navigate = useNavigate();
-	const [note, setNote] = useState({ title: "", content: "" });
+	const [note, setNote] = useState({
+		title: "",
+		content: "",
+		isFavorite: false,
+	});
 
 	const handleChange = (e) => {
 		const { name, value } = e.target;

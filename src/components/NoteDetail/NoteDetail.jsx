@@ -48,7 +48,7 @@ const NoteDetail = ({ notes, editNote }) => {
 						<NoteEdit note={currentNote} saveNote={handleSaveNote} />
 					)}
 				</Card>
-				<div>
+				<div className="btn-container">
 					<Button className="btn-edit" onClick={handleEditClick}>
 						Edit
 					</Button>

@@ -6,7 +6,8 @@ const NoteListPage = ({
 	onPageChange,
 	editNote,
 	deleteNote,
-    totalNotes
+	totalNotes,
+	toggleFavorite,
 }) => {
 	return (
 		<NoteList
@@ -16,6 +17,7 @@ const NoteListPage = ({
 			onPageChange={onPageChange}
 			editNote={editNote}
 			deleteNote={deleteNote}
+			toggleFavorite={toggleFavorite}
 		/>
 	);
 };

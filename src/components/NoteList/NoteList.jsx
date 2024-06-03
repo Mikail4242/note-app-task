@@ -1,7 +1,7 @@
 import React from "react";
 import { Pagination, Button } from "antd";
 import NoteCard from "../NoteCard/NoteCard";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import "../NoteList/NoteList.css";
 
 const NoteList = ({
@@ -11,6 +11,7 @@ const NoteList = ({
 	onPageChange,
 	editNote,
 	deleteNote,
+	toggleFavorite,
 }) => {
 	const navigate = useNavigate();
 
@@ -27,6 +28,11 @@ const NoteList = ({
 					onClick={handleAddNoteClick}>
 					New Note
 				</Button>
+				<Link to="/favorites" className="link-no-underline">
+					<Button className="favorite-note-btn" type="primary">
+						Favorites
+					</Button>
+				</Link>
 			</div>
 			<div className="note-list">
 				{notes.map((note) => (
@@ -35,6 +41,7 @@ const NoteList = ({
 						note={note}
 						editNote={editNote}
 						deleteNote={deleteNote}
+						toggleFavorite={toggleFavorite}
 					/>
 				))}
 			</div>
