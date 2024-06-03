@@ -1,0 +1,36 @@
+.card-container {
+	margin: 10px;
+	background-color: #ffd700;
+	border: 1px solid #ffbf00;
+	border-radius: 8px;
+	width: 220px;
+	height: 350px;
+}
+
+.note-text {
+	word-wrap: break-word;
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+.card-title {
+	color: #8a00c2;
+	display: flex;
+	justify-content: center;
+}
+
+.card-title:hover {
+	color: white;
+	display: flex;
+	justify-content: center;
+}
+
+.button-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn-delete {
+	margin-bottom: 15px;
+}

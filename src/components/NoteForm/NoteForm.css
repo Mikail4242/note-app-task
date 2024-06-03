@@ -1,0 +1,12 @@
+.note-form-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.note-form {
+    width: 200px;
+}
+.btn-note-form {
+    display: flex;
+    justify-content: space-between;
+}

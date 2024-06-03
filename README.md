@@ -1,3 +1,26 @@
+Suggestions for Improvement
+1.Enhance Testing
+Consider adding more tests and improving them by creating reusable functions and mocks.
+
+2.Enhance Code Readability
+Utilize JSDocs to improve code readability, making functions and their parameters clearer.
+
+3.Update Dependencies
+Keep packages updated to ensure security and compatibility with the latest features.
+
+4.End-to-End Testing
+Add end-to-end tests using frameworks like Playwright or Cypress to ensure full application functionality.
+
+5.Constants File
+Create a constants file to store commonly used variables, making them easily maintainable and accessible throughout the application.
+
+6.Linting and Formatting
+Set up linting and formatting tools like ESLint and Prettier to maintain a consistent code style throughout the project.
+
+7.Add TypeScript
+TypeScript gives us more certainty over the code we write and helps reduce the number of bugs and issues that are created.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

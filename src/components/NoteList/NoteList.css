@@ -1,0 +1,32 @@
+.btn-wrapper {
+	display: flex;
+	justify-content: center;
+}
+.add-note-btn {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #8a00c2;
+	color: #ffd700;
+}
+.pagination-wrapper {
+	display: flex;
+	justify-content: center;
+}
+.note-list {
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	align-items: center; 
+}
+
+@media (min-width: 480px) {
+	.note-list {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row;
+	}
+}
