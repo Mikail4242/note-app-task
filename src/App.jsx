@@ -7,7 +7,7 @@ import {
 	editNotes,
 	addNotes,
 	toggleFavorites
-} from "./components/utils/utils";
+} from "../src/utils/utils";
 import AppRoutes from "./routes/Routes";
 import { v4 as uuidv4 } from "uuid";
 import "./App.css";
