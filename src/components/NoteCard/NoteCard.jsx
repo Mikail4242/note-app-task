@@ -2,7 +2,7 @@ import React from "react";
 import { Card, Button } from "antd";
 import { Link } from "react-router-dom";
 import { StarOutlined, StarFilled } from "@ant-design/icons";
-import { parseContent } from "../utils/utils";
+import { parseContent } from "../../utils/utils";
 import "../NoteCard/NoteCard.css";
 
 const Note = ({ note, deleteNote, toggleFavorite }) => {
