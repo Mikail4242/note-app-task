@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useParams, useNavigate, useLocation } from "react-router-dom";
 import { Card, Typography, Divider, Button } from "antd";
-import { parseContent } from "../utils/utils";
+import { parseContent } from "../../utils/utils";
 import NoteNotFound from "../NoteNotFound/NoteNotFound";
 import NoteEdit from "../NoteEdit/NoteEdit";
 import "../NoteDetail/NoteDetail.css";
